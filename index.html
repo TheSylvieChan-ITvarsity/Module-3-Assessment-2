@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/solid.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+        <script src="js/menubar.js"></script>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <ul>
+                <span onclick="openNav()"><li style="float: right;"><i class="fa-solid fa-bars"></i></li></span>
+                <li class="logo-name">My Restaurant</li>
+                
+            </ul>
+            
+        </div>
+
+        <div id="myNav" class="menubar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="menubar-content">
+                <a href="#">About</a>
+                <a href="#">Starters</a>
+                <a href="#">Main Courses</a>
+                <a href="#">Desserts</a>
+                <a href="#">Kiddies Menu</a>
+                <a href="#">Hot Drinks</a>
+                <a href="#">Cold Drinks</a>
+              </div>
+        </div>
+        <div class="spacer" style="height:49px"></div>
+ 
+        <div class="row">
+            <img src="images/main.jpg" class="hero-img">
+        </div>
+        
+        <div class="spacer" style="height:5px"></div>
+        <div class="menu-spacer"></div>
+        <div class="row-resp"> 
+            <div class="row">
+                <a class="card-half" style="background-color: #8ecae6; color: white;" href="starters.html">
+                
+                    <h2><i class="fa-solid fa-bread-slice"></i></h2>
+                    <h3>Starters</h3>
+            
+                </a>
+                <a class="card-half" style="background-color: #ffb703; color: white;" href="main-courses.html">
+                    <h2><i class="fa-solid fa-burger"></i></h2>
+                    <h3>Main Course</h3>
+                </a>
+            </div>
+            <div class="row">
+                <a class="card-half" style="background-color: #fb8500; color: white;">
+                    <h2><i class="fa-solid fa-ice-cream"></i></h2>
+                    <h3>Desserts</h3>
+                </a>
+                
+                <a class="card-half" style="background-color: #219ebc; color: white;">
+                    <h2><i class="fa-solid fa-baby-carriage"></i></h2>
+                    <h3>Kiddies Menu</h3>
+                </a>
+                
+            </div>
+
+            <div class="row">
+                <a class="card-half" style="background-color: #084564; color: white;">
+                    <h2><i class="fa-solid fa-mug-saucer"></i></h2>
+                    <h3>Hot Drinks</h3>
+                </a>
+                <a class="card-half" style="background-color: #8ecae6; color: white;">
+                    <h2><i class="fa-solid fa-champagne-glasses"></i></h2>
+                    <h3>Cold Drinks</h3>
+                </a>
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+.menubar {
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(245, 245, 245); 
+    background-color: rgba(241, 241, 241, 0.8970.021); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  .menubar-content {
+    position: relative;
+    top: 15%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+   
+  }
+  
+
+  .menubar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2c2c2c;
+    display: block; 
+    transition: 0.3s; 
+    margin-bottom: 20px;
+  }
+  
+  .menubar a:hover, .menubar a:focus {
+    color: white;
+    background-color: #76b2b4;
+  }
+  
+  .menubar .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 40px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .menubar a {font-size: 20px}
+    .menubar .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
