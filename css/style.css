@@ -46,10 +46,16 @@ body {
     width: 100%;
     display: flex;
 }
-
 .row-resp {
     width: 100%;
-    display: table;
+    display: block;
+    position: relative;
+}
+
+#cat-menu {
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
 .quarter {
@@ -89,12 +95,14 @@ body {
     text-decoration: none;
     color: black;
 }
+.half-resp {
+    width: 100%;
+}
 .full {
     width: 100%;
-    display: block; 
+    margin: 0px;
+    padding: 0px;
     text-align: left;
-    margin: 15px 15px 15px 15px;
-    padding: 5px 20px 5px 20px;
     border-radius: 10px;
 }
 
@@ -102,7 +110,7 @@ body {
     width: 100%;
     display: block; 
     text-align: left;
-    margin: 15px 25px 15px 15px;
+    margin: 15px 22px 15px 15px;
     padding: 5px 20px 5px 20px;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -130,35 +138,31 @@ body {
     font-size: 20px;
     font-family: "Satisfy", cursive;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .card h2, .card-half h2 {
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .card h3, .card-half h3 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.hero-img {
+#hero-img {
     width: 100%;
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
 }
 
-
-@media only screen and (max-width: 400px) {
-
-    .logo-name {
-        position: fixed;
-        top: 0px;
-        left: 32%;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
+#food-img {
+    width: 100%;
+    padding: 0px !important;
+    margin: 15px 15px 15px 10px !important;
+    border-radius: 7px;
 }
 
 #hero-icon {
@@ -182,13 +186,30 @@ body {
     font-size: 28px;
 }
 
+textarea {
+    width: 100%;
+    min-height: 40%;
+}
 
-@media only screen and (min-width:700px){
+@media only screen and (max-width: 400px) {
+
+    .logo-name {
+        position: fixed;
+        top: 0px;
+        left: 32%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width:800px){
     .row-resp {
         max-width: 70%;
         margin: auto;
         background-color: white;
         display:flex;
+        justify-content: center;
         border-radius: 7px;
         padding: 50px 30px 50px 30px;
         position: absolute;
@@ -201,14 +222,11 @@ body {
         min-height: 270px;
     }
     .row {
-        width: 80% !important;
-        display: block;
-        float: left;
+        width: 100% !important;
+        display: flex;
     }
    
-    #row-full {
-        width: 100%;
-    }
+   
     body {
         background-image: url('../images/main.jpg');
         background-repeat: none;
@@ -219,8 +237,14 @@ body {
         max-width: 700px;
         margin: auto;
     }
-    .hero-img {
+    #hero-img {
         display: none;
+    }
+    #food-img {
+        width: 100%;
+        padding: 0px !important;
+        margin: 15px 15px 15px 10px !important;
+        border-radius: 7px;
     }
     .half-resp {
         width: 60%;
@@ -238,6 +262,17 @@ body {
         margin-right: -50% !important;
         transform: translate(-50%, -50%);
     }
+    .card {
+        width: 100%;
+        display: block; 
+        text-align: left;
+        margin: 15px 20px 15px 10px;
+        padding: 5px 20px 5px 20px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        text-decoration: none;
+        box-shadow: 5px 5px #333;
+    }
     .card-half {
         padding: 5px 25px 5px 15px ;
         margin-bottom: 30px;
@@ -247,13 +282,13 @@ body {
 
 @media only screen and (min-width:1170px){
 .row-resp {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     background-color: white;
     display: flex;
+    justify-content: center;
     border-radius: 7px;
     padding: 50px 30px 50px 30px;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -265,9 +300,6 @@ body {
 }
 .row {
     width: 50%;
-}
-#row-full {
-    width: 100%;
 }
 body {
     background-image: url('../images/main.jpg');
@@ -301,13 +333,13 @@ body {
 }
 @media only screen and (min-width:1600px){
     .row-resp {
-        max-width: 60%;
+        width: 60%;
         margin: auto;
         background-color: white;
         display: flex;
+        justify-content: center;
         border-radius: 7px;
         padding: 50px 30px 50px 30px;
-    
         position: absolute;
         top: 50%;
         left: 50%;
