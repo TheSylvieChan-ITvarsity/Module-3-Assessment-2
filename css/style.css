@@ -6,6 +6,7 @@ body {
 .navbar {
  margin: 0px;
  color: black;
+
 }
 
 .logo-name {
@@ -29,6 +30,10 @@ body {
 .navbar li:hover {
     background-color: rgb(223, 223, 223);
 }
+
+#button:hover {
+    background-color: #ffb703 !important;
+}
 .navbar ul {
     
     position: fixed;
@@ -39,6 +44,7 @@ body {
     padding: 0px;
     overflow: hidden;
     background-color: #f7f7f7;
+    z-index: 1;
     /*box-shadow: 3px 3px 3px 1px #e6e6e6;*/
 }
 
