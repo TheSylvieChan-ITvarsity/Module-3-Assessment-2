@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../css/solid.css">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+        <script src="../js/menubar.js"></script>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <ul>
+                <a href="../desserts.html" style="text-decoration: none; color: black;"><li><i class="fa-solid fa-arrow-left-long"></i></li></a>
+                <span onclick="openNav()"><li style="float: right;"><i class="fa-solid fa-bars"></i></li></span>
+                <li class="logo-name">My Restaurant</li>
+                
+            </ul>
+            
+        </div>
+
+        <div id="myNav" class="menubar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="menubar-content">
+                <a href="#">About</a>
+                <a href="../starters.html">Starters</a>
+                <a href="../main-courses.html">Main Courses</a>
+                <a href="../desserts.html">Desserts</a>
+                <a href="../kids.html">Kiddies Menu</a>
+                <a href="../drinks-hot.html">Hot Drinks</a>
+                <a href="../drinks-cold.html">Cold Drinks</a>
+              </div>
+        </div>
+        <div class="spacer" style="height:49px"></div>
+        
+ 
+        <div class="row-resp"> 
+            <div class="half-resp">
+                <div class="row">
+                    <img src="../images/flapjacks.webp" id="food-img">
+                </div>
+                
+
+                <div class="row">
+                    <div class="card" href="starters.html" style="background-color: #ffd29f; color: black;">
+                        <h3>Raspberry Honey Flapjacks<span style="float: right; font-weight: 700;">R40</span></h3>
+                        <p>ndulge in the perfect balance of sweet and tart flavors as juicy raspberries mingle with golden honey and wholesome oats in every bite.</p>
+                        <p>But here's the twist: nestled within each flapjack is a delightful surprise of vibrant raspberry goodness. Satisfyingly chewy with a hint of crunch, these flapjacks are a delightful snack or dessert option.</p>
+                        <h4><span style="float: right; font-weight: 700;">Serves: 1</span></h4>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="half-resp">
+                <div class="row">
+                    <div class="card" href="starters.html" style="background-color: #ffd29f; color: black;">
+                        <h3>Extras</h3>
+                        <input id="check-01" type="checkbox">
+                        <label for="check-01">Additional Slice</label>
+                        <br>
+                        <input id="check-03" type="checkbox">
+                        <label for="check-03">Side of Cream</label>
+                        <br>
+                        <input id="check-03" type="checkbox">
+                        <label for="check-03">Side of Ice-cream</label>
+                        <br>
+                        <br>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="card" href="starters.html" style="background-color: #ffd29f; color: black;">
+                        <h3>Special Requests</h3>
+                        <textarea placeholder="Type your message here"></textarea><br> 
+                        <br>
+                        <br>
+                    </div> 
+                </div>
+
+                <div class="row" href="#" style="text-decoration: none; color: black;">
+                    <a class="card" id="button" href="starters.html" style="background-color: #fb8500; color: white;">
+                        <h2>Submit Order</h2>
+                    </a> 
+                </div>
+              
+            </div>
+           
+        </div>
+
+    </body>
+
+</html>
