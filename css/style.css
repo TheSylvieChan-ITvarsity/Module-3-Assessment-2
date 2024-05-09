@@ -48,6 +48,10 @@ body {
     /*box-shadow: 3px 3px 3px 1px #e6e6e6;*/
 }
 
+#banner {
+    display:none;
+}
+
 .row {
     width: 100%;
     display: flex;
@@ -229,6 +233,14 @@ textarea {
 }
 
 @media only screen and (min-width:800px){
+    
+    #banner {
+        display:flex;
+        top: 20%;
+        background-color: inherit;
+    }
+    
+    
     .row-resp {
         max-width: 70%;
         margin: auto;
