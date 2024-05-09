@@ -181,6 +181,8 @@ body {
     border-radius: 500px;
     width: 50%;
     margin: auto;
+    max-height: 187.5px !important;
+    max-width: 187.5px !important; 
 }
 
 #hero-icon i {
@@ -259,8 +261,8 @@ textarea {
         width: 40%;
     }
     #hero-icon {
-        height: 187.5px;
-        width: 187.5px;
+        height: 187.5px !important;
+        width: 187.5px !important; 
         margin: 0px !important;
         position: relative;
         top: 50%;
